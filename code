@@ -1,0 +1,11 @@
+sudo apt-get install motion
+  ##in the terminal 
+sudo nano /etc/motion/motion.conf
+  ##edit the config file and make these changes
+  ##DAEMON = OFF (change to ON)
+  ##Webcam_localhost = ON (Change to OFF)
+sudo nano /etc/default/motion
+  ##start_motion_daemon = no (change to yes)
+sudo service motion start
+sudo service motion stop
+  ##to stop the service
